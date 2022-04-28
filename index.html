@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Note</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="addnote-box">
+            <a>
+                <img src="./image/add.png" alt="add" draggable="false">
+            </a>
+            <h3>Add new note</h3>
+        </div>
+        <div class="popup">
+            <div class="header">
+                <h2>New note</h2>
+                <img class="closeBtn" src="./image/cross-small.png" alt="">
+            </div>
+            <div class="warning">
+                <p>Please fill the blank</p>
+            </div>
+            <h3>title</h3> <input class="title-input" type="text" placeholder="title.." maxlength="20">
+            <h4 class="char">0/190</h4>
+            <h3>message</h3> <textarea class="msg-input" cols="30" rows="10" maxlength="190" placeholder="description.."></textarea>
+            <button class="addNoteBtn">add note</button>
+        </div>
+
+        <div class="edit">
+            <div class="header">
+                <h2>Edit note</h2>
+                <img class="closeBtnEdit" src="./image/cross-small.png" alt="">
+            </div>
+            <div class="warning">
+                <p>Please fill the blank</p>
+            </div>
+            <h3>title</h3> <input class="title-input" type="text" placeholder="title.." maxlength="20">
+            <h4 class="charE">0/190</h4>
+            <h3>message</h3> <textarea class="msg-inputE" cols="30" rows="10" maxlength="190" placeholder="description.."></textarea>
+            <button class="save">save</button>
+        </div>
+        <div class="bg"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
